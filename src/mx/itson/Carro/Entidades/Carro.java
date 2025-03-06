@@ -1,6 +1,7 @@
 package mx.itson.Carro.Entidades;
 import java.util.Scanner;
 import mx.itson.Carro.enums.TipoMotor;
+import mx.itson.Carro.enums.TipoTransmision;
 
         /**
  ⣿⣿⡆⠹⣿⣧⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣷⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢣⣿⡟⣰⡿⠟⣩⣴⣾⣿⣿
@@ -31,6 +32,20 @@ import mx.itson.Carro.enums.TipoMotor;
  * @author botel
  */
 public class Carro {
+
+    /**
+     * @return the tipoTransmision
+     */
+    public TipoTransmision getTipoTransmision() {
+        return tipoTransmision;
+    }
+
+    /**
+     * @param tipoTransmision the tipoTransmision to set
+     */
+    public void setTipoTransmision(TipoTransmision tipoTransmision) {
+        this.tipoTransmision = tipoTransmision;
+    }
 
     /**
      * @return the tipoMotor
@@ -108,6 +123,7 @@ public class Carro {
     private String marca;
     private double kilometraje;
     private TipoMotor tipoMotor;
+    private TipoTransmision tipoTransmision;
     Scanner scanner = new Scanner(System.in);
     /**
      * calcula el tiempo que tarde un carro en recorrer cierta distancia
