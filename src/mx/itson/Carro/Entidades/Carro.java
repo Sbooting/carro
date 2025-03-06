@@ -1,5 +1,6 @@
 package mx.itson.Carro.Entidades;
 import java.util.Scanner;
+import mx.itson.Carro.enums.TipoMotor;
 
         /**
  ⣿⣿⡆⠹⣿⣧⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣷⠀⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢣⣿⡟⣰⡿⠟⣩⣴⣾⣿⣿
@@ -30,6 +31,20 @@ import java.util.Scanner;
  * @author botel
  */
 public class Carro {
+
+    /**
+     * @return the tipoMotor
+     */
+    public TipoMotor getTipoMotor() {
+        return tipoMotor;
+    }
+
+    /**
+     * @param tipoMotor the tipoMotor to set
+     */
+    public void setTipoMotor(TipoMotor tipoMotor) {
+        this.tipoMotor = tipoMotor;
+    }
 
     /**
      * @return the kilometraje
@@ -92,6 +107,7 @@ public class Carro {
     private int año;
     private String marca;
     private double kilometraje;
+    private TipoMotor tipoMotor;
     Scanner scanner = new Scanner(System.in);
     /**
      * calcula el tiempo que tarde un carro en recorrer cierta distancia

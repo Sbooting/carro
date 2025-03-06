@@ -5,6 +5,7 @@
 package mx.itson.Carro.Interfaz;
 import java.util.Scanner;
 import mx.itson.Carro.Entidades.Carro;
+import mx.itson.Carro.enums.TipoMotor;
 
 /**
  ⡟⢩⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋⢹⣿⣿⣿⣿⣿
@@ -44,7 +45,9 @@ public class Main {
         bmw.setMarca("BMW");
         bmw.setColor("negro");
         bmw.setAño(2021);
-       bmw.setKilometraje(200.12);
+        bmw.setKilometraje(200.12);
+        bmw.setTipoMotor(TipoMotor.HIBRIDO);
+       
         double tiempo = bmw.calcularTiempo(distancia, velocidad);
         
         System.out.println("el tiempo que le tomaraa al carro " + bmw.getMarca() + 
