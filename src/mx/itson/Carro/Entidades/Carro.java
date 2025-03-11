@@ -34,6 +34,34 @@ import mx.itson.Carro.enums.TipoTransmision;
 public class Carro {
 
     /**
+     * @return the consecionario
+     */
+    public Consecionario getConsecionario() {
+        return consecionario;
+    }
+
+    /**
+     * @param consecionario the consecionario to set
+     */
+    public void setConsecionario(Consecionario consecionario) {
+        this.consecionario = consecionario;
+    }
+
+    /**
+     * @return the propietario
+     */
+    public Propietario getPropietario() {
+        return propietario;
+    }
+
+    /**
+     * @param propietario the propietario to set
+     */
+    public void setPropietario(Propietario propietario) {
+        this.propietario = propietario;
+    }
+
+    /**
      * @return the tipoTransmision
      */
     public TipoTransmision getTipoTransmision() {
@@ -124,6 +152,9 @@ public class Carro {
     private double kilometraje;
     private TipoMotor tipoMotor;
     private TipoTransmision tipoTransmision;
+    private Propietario propietario;
+    private Consecionario consecionario;
+    
     Scanner scanner = new Scanner(System.in);
     /**
      * calcula el tiempo que tarde un carro en recorrer cierta distancia
